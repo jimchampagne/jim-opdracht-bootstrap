@@ -1,9 +1,18 @@
-Bootstrap 5.0.0-beta3 boilerplate with Dart Sass, Gulp, autoprefixer, minification, concatenation, image compression, Browsersync. Also contains all Bootstrap examples.
+Maak een one-pager met Bootstrap 5.0.x over een onderwerp naar keuze. (hobby, film, muziek,...)
 
-Made with ❤️ for my Front-End Dev students 😸
+Om te starten clone je mijn GitHub repo https://github.com/dominique-w/bootstrap5beta3-boilerplate 
 
-Instructions:
-run npm install
-cd into src directory
-run gulp 
-customize!
+Gebruik Git om je werkproces te bewaren en maak een public GitHub repository aan om een online backup van je project te plaatsen. Omschrijf al je Git commits op een duidelijke manier. 
+
+Zorg voor een juiste toepassing van het Grid system op alle schermgroottes en neem de volgende Bootstrap elementen op in je pagina:
+
+een Navbar met anchor links - gebruik Scrollspy
+Display headings en andere Bootstrap typografie
+Responsive images
+een contactformulier met een verzendknop (hoeft niet te werken)
+Bootstrap icons
+Als je bestaande variabelen wil overschrijven, moet je dat doen bovenaan in main.scss boven de @use regel, vooraleer Bootstrap ingeladen wordt. Check zeker ook de mixins eens en maak er gebruik van!
+
+Custom code kan je onder de @use regel plaatsen maar eigen code toevoegen is geen vereiste voor deze opdracht; integendeel, het eindresultaat mag er helemaal “Bootstrappy” uitzien want de bedoeling is dat je zoveel mogelijk gebruik maakt van de Components en Utilities.
+
+Stuur een zip-bestand van je opdracht in. Zorg ervoor dat je Git geschiedenis er nog steeds in zit (de verborgen .git directory). Stuur ook de link naar jouw GitHub repository in via de "Online tekst" in de opdrachtbox hieronder.
