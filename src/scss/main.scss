@@ -3,8 +3,39 @@
 //ook utilities overschrijven kan op deze plaats - vergeet niet de !default flag mee over te nemen
 
 @import "./node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
 //extra custom code plaats je onder het inladen, bv.:
+html,
 body {
 	position: relative;
+	height: 100%;
+	font-size: 1rem;
+	font-family: "Montserrat", sans-serif;
+}
+
+.gradient {
+	background: rgb(0, 36, 1);
+	background: linear-gradient(90deg, rgba(0, 36, 1, 1) 0%, rgba(9, 121, 38, 1) 35%, rgba(222, 255, 0, 1) 100%);
+}
+
+.page-header {
+	margin-top: 4rem;
+	font-size: 1.25rem;
+	color: white;
+}
+
+.feature {
+	color: white;
+}
+
+.feature ul {
+	padding-left: 2rem;
+	list-style-type: none;
+}
+
+.feature ul li {
+	padding-left: 2rem;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
 }
