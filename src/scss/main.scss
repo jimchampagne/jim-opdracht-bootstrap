@@ -4,6 +4,7 @@
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
 
 //extra custom code plaats je onder het inladen, bv.:
 html,
@@ -14,28 +15,70 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+.navbar-collapse.show .nav-pills {
+	flex-direction: column;
+}
+
 .gradient {
-	background: rgb(0, 36, 1);
-	background: linear-gradient(90deg, rgba(0, 36, 1, 1) 0%, rgba(9, 121, 38, 1) 35%, rgba(222, 255, 0, 1) 100%);
+	background-image: linear-gradient(to right bottom, #0b00ff, #0079ff, #00aeff, #00daff, #00fff4);
+}
+
+.gradient-text {
+	background-image: linear-gradient(to right bottom, #0b00ff, #0079ff, #00aeff, #00daff, #00fff4);
+	background-clip: text;
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 .page-header {
-	margin-top: 4rem;
+	margin-top: 3rem;
 	font-size: 1.25rem;
 	color: white;
 }
 
-.feature {
+.origin {
 	color: white;
 }
 
-.feature ul {
-	padding-left: 2rem;
+.origin ul {
+	padding-left: 0px;
 	list-style-type: none;
 }
 
-.feature ul li {
-	padding-left: 2rem;
+.origin ul li {
+	padding-left: 0rem;
 	line-height: 1.5rem;
 	margin-bottom: 1rem;
+}
+
+.icon {
+	color: white;
+	height: 5rem;
+	width: 5rem;
+	font-size: 1.5rem;
+	border-radius: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact {
+	color: white;
+}
+
+.footer {
+	background-image: linear-gradient(to right bottom, #0b00ff, #0079ff, #00aeff, #00daff, #00fff4);
+	background-clip: text;
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	font-size: 1rem;
+	margin: 0;
+	padding: 1rem;
+	padding-bottom: 6rem;
 }

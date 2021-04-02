@@ -13,25 +13,30 @@
   <title>Bootstrap & Git - Jim</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="0">
   <!-- ================ Navbar ================= -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">
+        <span class="gradient-text">Octocat</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#origin">Origin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#history">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -39,19 +44,18 @@
   </nav>
 
   <!-- ================ Header ================= -->
-  <header class="page-header gradient">
+  <header class="page-header gradient" id="home">
     <div class="container pt-3">
       <div class="row justify-content-center align-items-center">
-        <div class="col-md-6">
-          <h2>Website built using Bootstrap 5</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odio vero amet voluptas similique ab quos
-            quidem repudiandae, totam soluta?</p>
+        <div class="col-lg-6">
+          <h1 class="display-3">Welcome to Octocat</h1>
+          <p>GitHub's mascot is an anthropomorphized "octocat" with five octopus-like arms.</p>
           <button type="button" class="btn btn-outline-light btn-lg">Read more</button>
         </div>
-        <div class="col-md-6"><img src="./img/octocat.png" alt=""></div>
+        <div class="col-lg-6 d-none d-lg-block"><img class="img-fluid" src="./img/octocat.png" alt=""></div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
       <path fill="#fff" fill-opacity="1"
           d="M0,160L48,165.3C96,171,192,181,288,160C384,139,480,85,576,85.3C672,85,768,139,864,149.3C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
@@ -63,50 +67,153 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h4>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, ipsum."</h4>
+          <figure>
+            <blockquote class="blockquote">
+              <p>"You are just like an octocat! Weird but super cute."</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Jim Champagne <cite title="Source Title">Octocat Magazine</cite>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================ Feature ================ -->
-  <section class="feature gradient">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <!-- ================ Origin Story ================ -->
+  <section id="origin" class="origin gradient">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
       <path fill="#fff" fill-opacity="1"
           d="M0,160L48,154.7C96,149,192,139,288,149.3C384,160,480,192,576,186.7C672,181,768,139,864,128C960,117,1056,139,1152,154.7C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
       </path>
     </svg>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="./img/octocat.png">
+        <div class="col-lg-6 d-none d-lg-block">
+          <img class="img-fluid" src="./img/octocat.png">
         </div>
-        <div class="col-md-6">
-          <h1 class="my-3">Feature Header</h1>
+        <div class="col-lg-6">
+          <h1 class="display-3 my-3">Origin Story</h1>
           <p class="my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi porro blanditiis cum saepe, odio minus veniam
-            qui aperiam maiores labore sequi? Ipsum nam reiciendis quibusdam eligendi unde libero illo neque?
+            In the early days of GitHub the company founders sought to design a fun error page for
+            the site, as was the style at the time. Git, the version control software upon which the service relies, has
+            a concept known as an “octopus merge”, in which three or more branches of development are combined.
           </p>
-          <ul>
-            <li><i class="bi bi-check2-circle"></i>Bootstrap 5</li>
-            <li>Latest technology</li>
-            <li>Super Responsive</li>
-            <li>Creative design</li>
-          </ul>
+          <p>The founders purchased a stock illustration of a half-cat, half-octopus character standing in a puddle and
+            placed it on the pages that appear when a server has a problem or a user requests a link that doesn’t. The
+            character they purchased, then known as the “Octopuss”, was created by Simon Oxley.</p>
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
       <path fill="#fff" fill-opacity="1"
           d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,117.3C672,149,768,203,864,192C960,181,1056,107,1152,80C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
     </svg>
   </section>
 
+  <!-- ============= Icons sectie ============== -->
+  <section id="history" class="icons">
+    <div class="container pt-5">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="icon gradient mb-4">
+            <i class="bi bi-emoji-laughing-fill"></i>
+          </div>
+          <h5 class="display-6">Having a little fun</h5>
+          <p>There was a lot of succes on the error pages. Back then, GitHub employees would
+            often travel to conferences around the world to give talks about our product. We began to illustrate
+            octocats
+            for slide decks, blog posts, meet-up tickets, and even fake money for events.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon gradient mb-4">
+            <i class="bi bi-lightning-fill"></i>
+          </div>
+          <h5 class="display-6">Going from brand</h5>
+          <p>The launch of the Octodex set the Octocat brand in motion. As people discovered favorites within the
+            collection, they began to share links with one another on Twitter and Facebook. GitHub users set octocats as
+            their avatars and a few created versions of their own. Most importantly for us, they began to demand
+            stickers of their favorite characters.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon gradient mb-4">
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h5 class="display-6">To identity</h5>
+          <p>We noticed that people began to gravitate toward specific
+            illustrations. What stood out to
+            us was the demand for octocats that people could personally identify with: the ones that represented their
+            culture, interests, or occupation. While people enjoyed amusing references, they really wanted characters
+            they could see themselves in.</p>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- =========== Contact formulier =========== -->
+  <section id="contact" class="contact gradient">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+          d="M0,160L48,165.3C96,171,192,181,288,202.7C384,224,480,256,576,234.7C672,213,768,139,864,144C960,149,1056,235,1152,240C1248,245,1344,171,1392,133.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
+    </svg>
+    <div class="container pb-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-3 py-3">Contact</h1>
+          <form>
+            <div class="form-group py-1">
+              <label for="InputName">Password</label>
+              <input type="text" class="form-control" id="InputName" placeholder="Full Name">
+            </div>
+            <div class="form-group py-1">
+              <label for="InputEmail">Email address</label>
+              <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+            </div>
+            <div class="form-group py-3">
+              <label for="MessageInput">Message</label>
+              <textarea class="form-control" id="MessageInput" rows="3"
+                  placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="form-check py-3">
+              <input type="checkbox" class="form-check-input" id="GDPR">
+              <label class="form-check-label" for="GDPR">You have read our terms and agree with our privacy
+                rules.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+          d="M0,256L60,240C120,224,240,192,360,176C480,160,600,160,720,186.7C840,213,960,267,1080,282.7C1200,299,1320,277,1380,266.7L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          data-darkreader-inline-fill="" style="--darkreader-inline-fill:#00095e;"></path>
+    </svg>
+  </section>
+
+  <!-- ================ Footer ================= -->
+  <footer class="footer">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <span>Copyright &copy; 2020-2021 | Made with <i class="bi bi-heart-fill"></i> by Jim Champagne</span>
+      </div>
+    </div>
+  </footer>
+
   <!-- ================ Scripts ================ -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
       crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"></script>
+  <script>
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbarNav'
+    })
+  </script>
 </body>
 
 </html>
