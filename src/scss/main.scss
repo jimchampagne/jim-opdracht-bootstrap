@@ -1,0 +1,12 @@
+// als je de complete bootstrap.scss inlaadt, moet je variabelen overschrijven voor het inladen ervan
+// je vindt _variables.scss en alle andere Bootstrap Sass bestanden op onderstaand pad
+//ook utilities overschrijven kan op deze plaats - vergeet niet de !default flag mee over te nemen
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+//extra custom code plaats je onder het inladen, bv.:
+body {
+  background-color: hotpink;
+}
+
+// wil je Bootstrap niet volledig inladen maar slechts de Sass partials en JS bestanden die je nodig hebt, ziehier hoe je dat kan doen https://getbootstrap.com/docs/5.0/customize/optimize/
